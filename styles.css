@@ -3,44 +3,46 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightgray;
 }
 
 #header {
-  position: absolute;
-  top: 0;
-  min-height: 75px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 15px;
+  justify-content: space-between; /* Add space between the logo and nav-bar */
+  align-items: center; /* Center vertically */
+  margin-top: 20px;
 }
 
 .logo {
-  width: 20vw;
-  padding-right: 230px;
-  margin-right: 230px;
+  width: 40vw;
+  padding-right: 200px;
+  margin-right: 20px;
   margin-left: 25px;
 }
 
+#nav-bar {
+  margin-left: auto; /* Push the nav-bar to the right */
+  margin-right: 100px;
+
+}
+
+/* Style for individual nav links (adjust as needed) */
+.nav-link {
+  text-decoration: none;
+  margin-left: 70px; /* Optional: Add spacing between nav links */
+  font-weight: 600;
+  font-size: large;
+  color: black;
+}
+
 #header-img {
-  height: 150px; 
-  width: 175px;
+  height: 175px; 
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0;
   margin: 0;
-}
-
-#hero {
-}
-
-.nav-link {
-  font-weight: 600;
-  font-size: large;
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
 }
 
 /* .logo-text {
@@ -61,7 +63,7 @@ h2 {
 
 #hero {
   margin: auto;
-  margin-top: 210px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -76,6 +78,8 @@ h2 {
 #email {
   margin: 10px 0;
   padding: 5px 3px;
+  border: 3px solid #0066ff;
+  background-color: white;
 }
 
 #button {
@@ -87,6 +91,81 @@ h2 {
   border-radius: 2px;
 }
 
+
 #features {
-  margin-top: 50px;
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Optional: Center vertically within the viewport */
+   /* Optional: Center the content horizontally */
+   /* text-align: left; */
 }
+
+#features h2 {
+  text-align: left;
+}
+
+/* Style for the individual feature items (adjust as needed) */
+#features > div {
+  margin: 20px; /* Optional: Add spacing between feature items */
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Optional: Center vertically within the viewport */
+}
+
+iframe {
+  /* Add CSS styles to the iframe as needed */
+}
+
+#pricing {
+  display: flex; /* Use flexbox to arrange the boxes horizontally */
+  justify-content: space-between; /* Add space between the boxes */
+  padding: 20px; /* Add padding around each box */
+}
+
+#pricing > div {
+  flex: 1; /* Distribute available space evenly among the boxes */
+  text-align: center; /* Center the content within each box */
+  padding: 20px; /* Add padding around each box */
+  border: 1px solid #ccc; /* Add borders for visual separation (optional) */
+  margin: 0 10px; /* Add margin between the boxes (optional) */
+  background-color: #f5f5f5; /* Background color for each box (optional) */
+  border: 3px solid #0066ff;
+  border-radius: 5px;
+
+}
+
+.level {
+  font-size: 1.5em; /* Enlarge the text */
+  border: 1px solid #000; /* Add a border around the text */
+  padding: 10px; /* Add padding around the text */
+  margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+#bronze {
+  background-color: #cd7f32;
+}
+
+#silver {
+  background-color: #cccccc;
+}
+
+#gold {
+  background-color: #ffcc00;
+}
+/* Target the <li> elements and add margin and padding */
+#pricing ol li {
+  margin: 10px 0; /* Add vertical margin (spacing between list items) */
+}
+
+ol {
+  list-style-type: none;
+  
+}
+
