@@ -14,20 +14,27 @@
     </div>
     <nav id="nav-bar">
       <!-- <a class="logo-text" href="#">Stella Blue Detailing</a> -->
-      <a class="nav-link" href="Options">Options</a>
-      <a class="nav-link" href="Methods">Methods</a>
-      <a class="nav-link" href="Pricing">Pricing</a>
-      <a class="nav-link" href="Contact">Contact</a>
+      <a class="nav-link" href="#methods">Methods</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#hero">Contact</a>
 
     </nav>
   </header>
   <section id="hero">
     <h2 class="intro">The finest Automotive Detailing from start to finish</h2>
-    <input type="email" id="email" name="name" size="30" placeholder="Enter your email address" />
-    <button id="button" type="button">GET STARTED</button>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <div class="centered-input">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="centered-button">
+        <input type="submit" id="submit" value="GET STARTED">
+      </div>
+    </form>
+
   </section>
   <div class="container">
-  <section id="features">
+  <section id="methods">
     <div class="grid">
       <div class="icon">
         <i class="fa-solid fa-spray-can-sparkles"></i>
@@ -59,7 +66,7 @@
 </div>
   <section id="how-it-works">
     <!-- <iframe></iframe>  -->
-    <img class="porsche" src="https://www.hdwallpaper.nu/wp-content/uploads/2017/04/porsche_911_turbo-1.jpg" alt="Image Description">
+    <img class="porsche" id="video" src="https://www.hdwallpaper.nu/wp-content/uploads/2017/04/porsche_911_turbo-1.jpg" alt="Image Description">
   </section>
   <section id="pricing">
     <div>
@@ -71,7 +78,8 @@
         <li>Lorem ipsum dolor</li>
         <li>Lorem ipsum</li>
       </ol>
-    <button id="button" type="button">SELECT</button>
+      <input type="button" id="selectBronze" value="SELECT">
+
     </div>
     <div>
       <div class="level" id="silver">Silver Detail</div>
@@ -82,7 +90,8 @@
         <li>Lorem ipsum dolor</li>
         <li>Lorem ipsum</li>
       </ol>
-    <button id="button" type="button">SELECT</button>
+      <input type="button" id="selectSilver" value="SELECT">
+
     </div>
     <div>
       <div class="level" id="gold">Gold Detail</div>
@@ -93,13 +102,13 @@
         <li>Lorem ipsum dolor</li>
         <li>Lorem ipsum</li>
       </ol>
-    <button id="button" type="button">SELECT</button>
+        <input type="button" id="selectGold" value="SELECT">
     </div>
   </section>
   <footer>
-    <a class="nav-link" href="#Options">Privacy</a>
-    <a class="nav-link" href="#Methods">Terms</a>
-    <a class="nav-link" href="#Pricing">Contact</a>
+    <a class="nav-link" href="#">Privacy</a>
+    <a class="nav-link" href="#">Terms</a>
+    <a class="nav-link" href="#hero">Contact</a>
     <p>Copyright 2023, Stella Blue Detailing</p>
   </footer>
 </body>
