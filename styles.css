@@ -15,28 +15,38 @@
   justify-content: space-between; /* Add space between the logo and nav-bar */
   align-items: center; /* Center vertically */
   margin-top: 20px;
+  background-color: lightgray;
+
 }
 
 .logo {
-  width: 40vw;
-  padding-right: 200px;
-  margin-right: 20px;
+  position: fixed;
+  width: 20vw;
+  padding: 150px 100% 0 0;
   margin-left: 25px;
 }
 
 #nav-bar {
-  margin-left: auto; /* Push the nav-bar to the right */
-  margin-right: 100px;
-
+  position: fixed;
+  padding: 85px 175px 0 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex; /* Add this to create a horizontal layout */
+  align-items: center; /* Align text vertically with the logo */
 }
 
-/* Style for individual nav links (adjust as needed) */
+/* Style for individual nav links */
 .nav-link {
   text-decoration: none;
-  margin-left: 70px; /* Optional: Add spacing between nav links */
-  font-weight: 600;
-  font-size: large;
+  margin: 0 50px; /* Spacing between links */
+  font-weight: bold; /* Make the links bold */
+  font-size: x-large;
   color: black;
+}
+
+.nav-link:hover {
+  color: #0066ff;
 }
 
 #header-img {
@@ -62,7 +72,7 @@
   height: 200px; 
 
   margin: auto;
-  margin-top: 80px;
+  margin-top: 200px;
   margin-bottom: 50px;
 }
 
@@ -231,22 +241,19 @@ footer {
   text-align: center;
 }
 
-/* Style for the navigation links */
-.nav-link {
-  text-decoration: none;
-  color: black; /* Link text color */
-  margin: 0 20px; /* Spacing between links */
-  font-weight: bold; /* Make the links bold */
-}
 
-.nav-link:hover {
-  text-decoration: underline; /* Underline on hover */
-}
 
 /* Style for the copyright text */
 footer p {
   font-size: 14px; /* Adjust font size as needed */
   margin-top: 10px; /* Spacing between links and copyright text */
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: black; /* Link text color */
+  margin: 0 20px; /* Spacing between links */
+  font-weight: bold; /* Make the links bold */
 }
 
 /* Center the copyright text on smaller screens */
