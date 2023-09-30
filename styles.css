@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: lightgray;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -59,10 +60,6 @@
   margin: 0;
 }
 
-.intro {
-  text-align: center;
-}
-
 #hero {
   display: flex;
   flex-direction: column;
@@ -70,16 +67,17 @@
   justify-content: center;
   text-align: center;
   height: 200px; 
-
-  margin: auto;
   margin-top: 200px;
   margin-bottom: 50px;
+  padding: 200px 0;
 }
 
 .intro {
   font-size: x-large;
   width: 75%;
   margin-bottom: 20px;
+  text-align: center;
+
 }
 
 #email {
@@ -117,6 +115,7 @@
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding: 200px 0;
 }
 
 .grid {
@@ -212,6 +211,8 @@ ol {
   display: flex;
   justify-content: space-around;
   margin: 0 50px;
+  padding-top: 200px;
+
 }
 
 #pricing > div {
@@ -240,8 +241,6 @@ footer {
   padding: 60px 0 20px 0; /* Padding on the top and bottom */
   text-align: center;
 }
-
-
 
 /* Style for the copyright text */
 footer p {
